@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Restaurante</title>
+    <link rel="stylesheet" href="../css/singup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h2 class="text-center">Registro de Restaurante</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombreCompleto" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="nombreRestaurante" class="form-label">Nombre del Restaurante</label>
+                    <input type="text" class="form-control" id="nombreRestaurante" placeholder="Nombre del restaurante" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tipoRestaurante" class="form-label">Tipo de Restaurante</label>
+                    <select class="form-select" id="tipoRestaurante" required>
+                        <option value="" selected disabled>Selecciona una opción</option>
+                        <option value="comidaRapida">Comida Rápida</option>
+                        <option value="gourmet">Gourmet</option>
+                        <option value="cafeteria">Cafetería</option>
+                        <option value="mariscos">Mariscos</option>
+                        <option value="vegano">Vegano</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Número Telefónico</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ej. 123-456-7890" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="horaLlamada" class="form-label">¿A qué hora deseas la llamada?</label>
+                    <input type="time" class="form-control" id="horaLlamada" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Registrar</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

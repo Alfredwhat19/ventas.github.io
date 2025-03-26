@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../css/Home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn">
+                <a href="../pages/Checkout.html" style="text-decoration: none; color: inherit;">Pagar</a>
+            </button>
+            <button class="nav-btn" id="cart-btn">Carrito <span id="cart-count" class="cart-count">0</span></button>
+        </div>
+    </nav>
+
+    <!-- Productos -->
+    <div class="products-container">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Producto+1" alt="Producto 1" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Producto 1</h3>
+                <p class="product-price">$19.99</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn decrease-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase-btn">+</button>
+                </div>
+                <button class="add-to-cart" data-id="1" data-name="Producto 1" data-price="19.99" data-image="https://via.placeholder.com/300x200?text=Producto+1">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Producto+2" alt="Producto 2" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Producto 2</h3>
+                <p class="product-price">$24.99</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn decrease-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase-btn">+</button>
+                </div>
+                <button class="add-to-cart" data-id="2" data-name="Producto 2" data-price="24.99" data-image="https://via.placeholder.com/300x200?text=Producto+2">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Producto+3" alt="Producto 3" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Producto 3</h3>
+                <p class="product-price">$29.99</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn decrease-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase-btn">+</button>
+                </div>
+                <button class="add-to-cart" data-id="3" data-name="Producto 3" data-price="29.99" data-image="https://via.placeholder.com/300x200?text=Producto+3">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Producto+4" alt="Producto 4" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Producto 4</h3>
+                <p class="product-price">$14.99</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn decrease-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn increase-btn">+</button>
+                </div>
+                <button class="add-to-cart" data-id="4" data-name="Producto 4" data-price="14.99" data-image="https://via.placeholder.com/300x200?text=Producto+4">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tu Carrito</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div id="cart-items">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+                <p id="empty-cart-message">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <button class="checkout-btn">Proceder al pago</button>
+        </div>
+    </div>
+
+    <script src="../js/Home.js"></script>
+</body>
+</html>
